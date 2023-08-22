@@ -225,11 +225,11 @@ main {
 }
 
 .client .openable:hover {
-  text-decoration: underline;
+  opacity: .3;
   border-radius: 16px;
 }
 .client .openable:hover .chevron-down::after {
-	opacity: .25;
+	opacity: .3;
 }
 
 .openable {

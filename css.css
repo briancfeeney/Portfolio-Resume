@@ -1,0 +1,296 @@
+body {
+	font-family: 'Inter', sans-serif;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+li {
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+p {
+	max-width: 45em;
+}
+
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+hr {
+	border: 1px solid rgba(0, 0, 0, .05);
+}
+
+/*--- About Me  ----------------------------------*/
+
+.sidebar {
+	width: 300px;
+	height: 100vh;
+	padding-left: 48px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 48px;
+	position: fixed;
+	bottom: 0;
+	width: 300px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 8px;
+}
+
+p {
+	margin: 0;
+}
+
+h2,
+.description,
+.role {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 22px;
+	color: #333333;
+	margin-bottom: 8px;
+}
+
+h3,
+.introduction,
+.resume p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #666666;
+	margin-bottom: 8px;
+}
+.intention {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+	margin-bottom: 16px;
+}
+
+.intro ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.intro li {
+	display: inline;
+	margin-right: 24px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.intro ul li a {
+	text-decoration: none;
+	color: #0000EE;
+}
+
+/*--- The CV ----------------------------------*/
+
+main {
+	display: flex;
+	flex: 1;
+	padding: 48px 0;
+}
+
+.content {
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	max-width: 1000px;
+}
+
+.employment {
+	text-align: left;
+	margin-bottom: 48px;
+}
+
+.employment .dates {
+	color: #666666;
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+.employer {
+	text-align: left;
+	width: 100%;
+	font-size: 7vw;
+	font-weight: 500;
+	line-height: 7vw;
+	padding: 8px;
+	height: 10vw;
+}
+
+.employer span {
+	display: block;
+	height: 100px;
+	width: 100%;
+}
+
+.employer img {
+	/* max-width: 800px; */
+	height: auto;
+	width: auto;
+	max-width: 95%;
+	max-height: 100%;
+	display: block;
+}
+
+.employer.familiar img {
+	display: block;
+}
+
+.resume,
+.client-work {
+	background-color: rgba(0, 0, 0, .025);
+	padding: 16px;
+	margin: 16px 0;
+	display: block;
+	border-radius: 4px;
+}
+
+.resume ul {
+	padding-left: 16px;
+	color: #666666;
+	font-size: 14px;
+}
+
+.client-list li {
+	color: #666666;
+}
+
+.client-list .openable {
+	color: #000000;
+}
+
+.client-list {
+	padding-left: 16px;
+	margin-bottom: 32px;
+	font-size: 14px;
+}
+
+
+.client {
+	position: relative;
+}
+
+.client span {
+	display: block;
+}
+
+.client-work img {
+	margin-bottom: 16px;
+}
+
+.client-work p {
+	margin-bottom: 1em;
+}
+
+.client-work div {
+	margin: 3em 0 2em;
+}
+
+
+
+/* --- Accordion CSS -------------------------- */
+
+.employer {
+	position: relative;
+}
+
+.employer:hover {
+  background-color: rgba(0, 0, 0, .025);
+  border-radius: 16px;
+}
+
+.client .openable:hover {
+  text-decoration: underline;
+  border-radius: 16px;
+}
+.client .openable:hover .chevron-down::after {
+	opacity: .25;
+}
+
+.openable {
+	cursor: pointer;
+	position: relative;
+}
+
+.resume, .client-work {
+	display: none;
+}
+
+.openable.active + .resume,
+.openable.active + .client-work {
+	display: block;
+}
+
+.chevron-down {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    right: 8px;
+    top: 48%;
+}
+.chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+}
+
+.openable.active .chevron-down::after {
+	transform: rotate(45deg);
+}
+
+.client .chevron-down {
+	top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+	background-color: #636e72;
+	margin-bottom: 24px;
+}

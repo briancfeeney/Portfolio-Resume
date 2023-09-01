@@ -116,10 +116,17 @@
 					<li class="client">
 						<span class="openable">[NEW] Newsletters<div class="chevron-down"></div></span>
 						<div class="client-work">
+							<p>Newsletters have become a major publishing medium for our newsrooms. For years, we used the third-party software Campaign Monitor to build and send them, but we've decided to bring the entire process in-house. This means rethinking how we plan, construct, publish, and send all of that editorial content. And we have multiple kinds of emails going out. There are the standard, editor-written ones, but also automated newsletters with query-based content.<p>
+							<p>The PM for Newsletters wrote his Product Requirements Document and I set to understanding what our tools could currently handle, what would take some tweaking to make work, and which needed entirely new tooling structures.</p>
 							<img src="images/screentone/newsletters-tooling-requirements.png">
+							<p>Everything published by WSJ is first planned in NewsGrid, so we begin there. Eventually, the sked will have a newsletters-specific sked type with ways to track their unique publishing flow. We'll then use NewsPress (a hacked WordPress instance) to do the content editing. This will allow us to publish our newsletter content to the web (as an article), which today we don't do.</p>
 							<img src="images/screentone/newsletters-proposed-flow.png">
+							<p>After we established this flow, the PRD expanded in scope. We needed to incorporate the automated emails into the flow. This meant deciding where the final Publish action happens. For articles, that's with a button in NewsPress. But the workflows around sending automated emails do not belong in NewsPress.</p>
+							<p>I mapped out a number of possible flows for how editors might move through our tools to publish all of the additional newsletter types.</p>
 							<img src="images/screentone/newsletters-with-current-tools.png">
+							<p>We know we will need to build multiple views for handling the various needs of Newsletters. What we have not yet worked out is where those those views will permanently reside. We have three options: 1) build a new Newsletters tool, 2) build these features into NewsGrid, or 3) build these features in the Curation tool. We're leaning towards option 3, and so I've begun wireframing how this might look.</p>
 							<img src="images/screentone/newsletters-wireframes.png">
+							<p>This is project is still in an exploration phase, with dozens of important decisions still needing made by our stakeholders. If all goes to plan, we'll be publishing Newsletters via the Screentone Suite of tools by the end of the 2023. At least in MVP fashion.</p>
 						</div>
 					</li>
 				</ul>

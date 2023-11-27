@@ -21,9 +21,17 @@ p {
 	line-height: 1.4em;
 }
 
+p a:hover {
+	color: blue;
+}
+
 a {
 	color: #000000;
 	text-decoration: underline;
+}
+
+a:hover {
+	color: blue;
 }
 
 hr {
@@ -101,7 +109,7 @@ h3,
 
 .intro ul li a {
 	text-decoration: none;
-	color: #0000EE;
+	color: blue;
 }
 
 /*--- The CV ----------------------------------*/
@@ -134,17 +142,17 @@ main {
 
 .employer {
 	text-align: left;
-	width: 100%;
+	width: auto;
 	font-size: 7vw;
 	font-weight: 500;
 	line-height: 7vw;
-	padding: 8px;
-	height: 10vw;
+	padding: 8px 44px 8px 8px;
+	/* height: 10vw; */
 }
 
 .employer span {
 	display: block;
-	height: 100px;
+	max-height: 100px;
 	width: 100%;
 }
 
@@ -153,8 +161,9 @@ main {
 	height: auto;
 	width: auto;
 	max-width: 95%;
-	max-height: 100%;
+	max-height: 100px;
 	display: block;
+	object-fit: contain;
 }
 
 .employer.familiar img {
@@ -279,7 +288,43 @@ main {
 }
 
 
+/* --- Responsiveness -------------------------- */
 
+@media (max-width: 900px) {
+	body {
+		flex-direction: column;
+	}
+	.sidebar {
+		width: auto;
+		height: auto;
+		padding: 24px;
+		display: flex;
+		align-items: flex-start;
+		background-color: black;
+		color: white;
+	}
+	.intro {
+		flex-direction: column;
+		padding-bottom: 24px;
+		position: relative;
+		width: auto;
+	}
+	.sidebar .description {
+		color: white;
+		opacity: 90%;
+	}
+	.sidebar .introduction {
+		color: white;
+		opacity: 70%;
+	}
+	.sidebar .intention {
+		color: white;
+		opacity: 50%;
+	}
+	.sidebar .intro ul li a {
+		color: lightblue;
+	}
+}
 
 
 

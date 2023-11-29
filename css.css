@@ -21,10 +21,6 @@ p {
 	line-height: 1.4em;
 }
 
-p a:hover {
-	color: blue;
-}
-
 a {
 	color: #000000;
 	text-decoration: underline;

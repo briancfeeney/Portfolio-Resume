@@ -175,6 +175,12 @@ main {
 	border-radius: 4px;
 }
 
+.resume h3 {
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+}
+
 .resume ul {
 	padding-left: 16px;
 	color: #666666;
